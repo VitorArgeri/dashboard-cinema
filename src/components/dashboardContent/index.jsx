@@ -13,11 +13,8 @@ const DashboardContent = () => {
             </div>
 
             <SummaryCards />
-
             <ChartContainer />
-
             <MovieStats />
-
             <AdditionalInfo />
         </section>
     );
