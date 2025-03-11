@@ -1,0 +1,43 @@
+/* Estatísticas de filmes */
+.movieStats {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+  }
+  
+  .movieStats h3 {
+    margin-bottom: 1rem;
+    color: #4a5568;
+  }
+  
+  .movieTable {
+    width: 100%;
+    min-width: 600px;
+  }
+  
+  .movieTableHeader {
+    display: flex;
+    background-color: #edf2f7;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movieRow {
+    display: flex;
+    padding: 0.8rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .movieRow:last-child {
+    border-bottom: none;
+  }
+  
+  .movieCell {
+    flex: 1;
+  }
+  
