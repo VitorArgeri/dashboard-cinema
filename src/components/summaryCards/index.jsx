@@ -1,13 +1,15 @@
 import styles from './summaryCards.module.css';
 
-const SummaryCards = () => {
+const SummaryCards = ({ cards }) => {
     return (
         <div className={styles.summaryCards}>
-            <div className={styles.card}>
-                <h3>Arrecadação Diária</h3>
-                <div className={styles.cardValue}>R$ 12.450,00</div>
-                <div className={`${styles.cardChange} ${styles.positive}`}>+15% em relação a ontem</div>
-            </div>
+            {cards.map((card, index) => (
+                <div className={styles.card}>
+                    <h3>{card.title}</h3>
+                    <div className={styles.cardValue}>{card.value}</div>
+                    <div className={styles + `.cardChange ${card.isPositive ? styles.positive : styles.negative}`}>{card.change}</div>
+                </div>
+            ))}
 
             <div className={styles.card}>
                 <h3>Arrecadação Mensal</h3>
