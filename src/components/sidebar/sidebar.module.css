@@ -4,6 +4,7 @@
     background-color: #2c5282;
     color: #fff;
     padding: 1rem 0;
+    height: 100%;
   }
   
   .sidebarHeader {
@@ -16,11 +17,12 @@
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   
   .sidebarMenu ul li {
     flex: 1;
-    min-width: 150px;
+    min-width: 13vw;
   }
   
   .sidebarMenu ul li a {
